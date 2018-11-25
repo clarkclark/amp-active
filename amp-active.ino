@@ -7,11 +7,11 @@ note: the relay is active LOW
 // declare pins
 int relaypin = 12;    	// digital output pin for the relay
 int sensepin = A0;      // analog pin to read from
-int directSense = 0;    // variable to put the sensepin reading into
 
 // declare variables
+int directSense = 0;    // variable to put the sensepin reading into
 int stayOn = 10;	      // seconds (loops) for relay (and amp) to stay on after sound is no longer detected
-                              // set to 10 seconds for debugging. Normal 2-minute delay, set to 120
+                        // set to 10 seconds for debugging. Normal 2-minute delay, set to 120
 int howLong = 0;	      // this is the count of seconds (loops) so far for relay on, sound detect off
 bool isSoundDetected = false; // will be set true when sound is detected
 bool relayOn = false;         // will be set high when relay is active
